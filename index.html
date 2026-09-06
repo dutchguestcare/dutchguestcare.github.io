@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Dutch Guest Care | Persoonlijke ondersteuning in Griekenland</title>
+  <title>Dutch Guest Care | Hospitality consultancy voor Nederlandse en Vlaamse gasten</title>
 
-  <meta name="description" content="Dutch Guest Care biedt Nederlandstalige persoonlijke ondersteuning voor Nederlanders en Vlamingen die wonen, verblijven of zaken regelen in Griekenland.">
+  <meta name="description" content="Dutch Guest Care helpt hotels, B&B's, vakantieverhuurders en property managers in Griekenland om Nederlandse en Vlaamse gasten professioneler te bedienen.">
 
   <style>
     * {
@@ -21,105 +21,102 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      color: #24333b;
+      color: #25333a;
       background: #ffffff;
       line-height: 1.7;
     }
 
     header {
       background: #ffffff;
-      border-bottom: 1px solid #e8ecee;
+      border-bottom: 1px solid #e4e8ea;
       position: sticky;
       top: 0;
       z-index: 100;
     }
 
     nav {
-      max-width: 1150px;
+      max-width: 1180px;
       margin: auto;
-      padding: 18px 25px;
+      padding: 18px 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
     .logo {
-      font-size: 21px;
+      font-size: 22px;
       font-weight: 700;
-      color: #123f52;
-      letter-spacing: 0.5px;
+      color: #163f50;
     }
 
-    nav a {
-      color: #334c57;
+    .menu a {
       text-decoration: none;
-      margin-left: 24px;
+      color: #43545b;
+      margin-left: 22px;
       font-size: 15px;
     }
 
-    nav a:hover {
-      color: #087f8c;
+    .menu a:hover {
+      color: #0c7c86;
     }
 
     .hero {
-      min-height: 78vh;
-      background: linear-gradient(135deg, #edf7f6 0%, #f8f5ed 100%);
-      display: flex;
-      align-items: center;
+      background: linear-gradient(135deg, #eef6f5 0%, #f6f1e8 100%);
+      padding: 110px 24px 95px;
       text-align: center;
-      padding: 80px 25px;
     }
 
-    .hero-content {
-      max-width: 850px;
+    .hero-inner {
+      max-width: 920px;
       margin: auto;
     }
 
     .eyebrow {
-      color: #087f8c;
-      text-transform: uppercase;
-      letter-spacing: 2px;
+      color: #0c7c86;
       font-size: 13px;
       font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
       margin-bottom: 18px;
     }
 
     h1 {
-      font-size: clamp(38px, 6vw, 64px);
-      line-height: 1.12;
-      color: #123f52;
+      color: #163f50;
+      font-size: clamp(42px, 6vw, 68px);
+      line-height: 1.1;
       margin-bottom: 24px;
     }
 
     .hero p {
       font-size: 20px;
-      max-width: 720px;
-      margin: 0 auto 35px;
-      color: #53666d;
+      color: #5b6a70;
+      max-width: 760px;
+      margin: 0 auto 32px;
     }
 
     .button {
       display: inline-block;
-      background: #087f8c;
+      text-decoration: none;
+      background: #0c7c86;
       color: white;
       padding: 15px 28px;
       border-radius: 6px;
-      text-decoration: none;
       font-weight: 700;
-      transition: 0.2s;
     }
 
-    .button:hover {
-      background: #066b75;
-      transform: translateY(-1px);
+    .button.secondary {
+      background: transparent;
+      color: #163f50;
+      border: 1px solid #163f50;
+      margin-left: 10px;
     }
 
     section {
-      padding: 85px 25px;
+      padding: 85px 24px;
     }
 
     .container {
-      max-width: 1050px;
+      max-width: 1120px;
       margin: auto;
     }
 
@@ -129,132 +126,211 @@
     }
 
     .section-title h2 {
-      color: #123f52;
-      font-size: 36px;
+      font-size: 38px;
+      color: #163f50;
       margin-bottom: 12px;
     }
 
     .section-title p {
-      max-width: 700px;
+      color: #65747a;
+      max-width: 740px;
       margin: auto;
-      color: #65777d;
     }
 
     .intro {
-      max-width: 800px;
+      max-width: 860px;
       margin: auto;
       text-align: center;
       font-size: 18px;
-      color: #53666d;
+      color: #56666c;
     }
 
     .soft {
-      background: #f7faf9;
+      background: #f7f9f8;
     }
 
     .cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
+      gap: 24px;
     }
 
     .card {
-      background: white;
-      padding: 34px;
+      background: #ffffff;
+      padding: 30px;
+      border: 1px solid #e5e9ea;
       border-radius: 10px;
-      border: 1px solid #e7ecec;
-      box-shadow: 0 8px 25px rgba(20, 63, 82, 0.05);
-    }
-
-    .card-number {
-      color: #087f8c;
-      font-size: 14px;
-      font-weight: 700;
-      margin-bottom: 10px;
+      box-shadow: 0 8px 24px rgba(20, 63, 80, 0.05);
     }
 
     .card h3 {
-      color: #123f52;
+      color: #163f50;
       margin-bottom: 12px;
       font-size: 21px;
     }
 
     .card p {
-      color: #64767c;
+      color: #65747a;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 26px;
+    }
+
+    .price-card {
+      position: relative;
+      background: white;
+      border: 1px solid #e3e8e9;
+      border-radius: 12px;
+      padding: 32px;
+      box-shadow: 0 10px 28px rgba(20, 63, 80, 0.06);
+    }
+
+    .price-card.featured {
+      border: 2px solid #0c7c86;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #0c7c86;
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 10px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+
+    .price-card h3 {
+      color: #163f50;
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      color: #0c7c86;
+      font-size: 31px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .price small {
+      color: #66767c;
+      font-size: 15px;
+      font-weight: 400;
+    }
+
+    .intro-price {
+      background: #eef7f6;
+      color: #0c666f;
+      padding: 10px 12px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+
+    ul {
+      list-style: none;
+      margin: 20px 0 26px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      color: #59696f;
+    }
+
+    li::before {
+      content: "✓";
+      color: #0c7c86;
+      font-weight: 700;
+      margin-right: 8px;
+    }
+
+    .extras {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .extra-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 17px 0;
+      border-bottom: 1px solid #e2e7e8;
+    }
+
+    .extra-row strong {
+      color: #163f50;
     }
 
     .steps {
-      max-width: 800px;
+      max-width: 860px;
       margin: auto;
     }
 
     .step {
       display: flex;
-      gap: 25px;
-      margin-bottom: 35px;
+      gap: 22px;
+      margin-bottom: 32px;
     }
 
-    .step-circle {
-      min-width: 48px;
-      height: 48px;
+    .step-number {
+      width: 46px;
+      height: 46px;
+      min-width: 46px;
       border-radius: 50%;
-      background: #087f8c;
+      background: #0c7c86;
       color: white;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: bold;
+      font-weight: 700;
     }
 
     .step h3 {
-      color: #123f52;
-      margin-bottom: 6px;
+      color: #163f50;
+      margin-bottom: 5px;
     }
 
-    .step p {
-      color: #64767c;
-    }
-
-    .important {
-      max-width: 800px;
-      margin: 45px auto 0;
-      padding: 25px;
-      background: #edf7f6;
-      border-left: 4px solid #087f8c;
-      border-radius: 5px;
-    }
-
-    .important strong {
-      color: #123f52;
+    .note {
+      max-width: 860px;
+      margin: 35px auto 0;
+      background: #eef7f6;
+      border-left: 4px solid #0c7c86;
+      padding: 22px;
+      border-radius: 6px;
+      color: #4f6268;
     }
 
     .cta {
-      background: #123f52;
+      background: #163f50;
       color: white;
       text-align: center;
     }
 
     .cta h2 {
-      font-size: 36px;
+      font-size: 38px;
       margin-bottom: 15px;
     }
 
     .cta p {
-      max-width: 650px;
-      margin: 0 auto 30px;
-      color: #d7e3e6;
+      color: #d2dfe2;
+      max-width: 700px;
+      margin: 0 auto 28px;
     }
 
     .cta .button {
-      background: #ffffff;
-      color: #123f52;
+      background: white;
+      color: #163f50;
     }
 
     footer {
-      background: #0d303f;
-      color: #b9cbd1;
-      padding: 35px 25px;
+      background: #102f3d;
+      color: #b8c8cc;
       text-align: center;
+      padding: 34px 24px;
       font-size: 14px;
     }
 
@@ -262,26 +338,29 @@
       color: white;
     }
 
-    @media (max-width: 800px) {
-      .cards {
+    @media (max-width: 850px) {
+      .cards,
+      .pricing-grid {
         grid-template-columns: 1fr;
       }
 
-      nav .menu {
+      .menu {
         display: none;
+      }
+
+      .button.secondary {
+        display: block;
+        margin: 12px auto 0;
+        width: fit-content;
+      }
+
+      .extra-row {
+        flex-direction: column;
+        gap: 4px;
       }
 
       section {
         padding: 65px 20px;
-      }
-
-      .hero {
-        min-height: auto;
-        padding: 100px 20px;
-      }
-
-      .hero p {
-        font-size: 18px;
       }
     }
   </style>
@@ -294,211 +373,411 @@
     <div class="logo">Dutch Guest Care</div>
 
     <div class="menu">
-      <a href="#over">Over ons</a>
+      <a href="#diensten">Diensten</a>
+      <a href="#pakketten">Pakketten</a>
       <a href="#werkwijze">Werkwijze</a>
-      <a href="#gesprek">Consultatie</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
 </header>
 
-
 <main>
 
   <section class="hero">
-    <div class="hero-content">
+    <div class="hero-inner">
 
       <div class="eyebrow">
-        Nederlandstalige ondersteuning in Griekenland
+        Hospitality consultancy voor Griekenland
       </div>
 
       <h1>
-        Wegwijs in Griekenland.<br>
-        In je eigen taal.
+        Better service for Dutch-speaking guests.
       </h1>
 
       <p>
-        Persoonlijke en praktische ondersteuning voor Nederlanders
-        en Vlamingen die in Griekenland wonen, verblijven of er
-        zaken willen regelen.
+        Dutch Guest Care helpt hotels, B&B's, vakantieverhuurders
+        en property managers in Griekenland om Nederlandse en Vlaamse
+        gasten duidelijker, professioneler en persoonlijker te bedienen.
       </p>
 
-      <a class="button" href="#gesprek">
-        Ontdek hoe het werkt
+      <a class="button" href="#pakketten">
+        Bekijk de pakketten
+      </a>
+
+      <a class="button secondary" href="#contact">
+        Plan een kennismaking
       </a>
 
     </div>
   </section>
 
-
-  <section id="over">
+  <section>
     <div class="container">
 
       <div class="section-title">
-        <h2>Persoonlijke ondersteuning</h2>
+        <h2>Meer vertrouwen. Betere communicatie. Sterkere reviews.</h2>
       </div>
 
       <div class="intro">
         <p>
-          Wonen of verblijven in Griekenland is prachtig, maar soms
-          loop je tegen praktische vragen aan waarbij taal,
-          lokale gewoontes of onduidelijke informatie het moeilijker
-          maken dan nodig.
-        </p>
-
-        <br>
-
-        <p>
-          Dutch Guest Care biedt een persoonlijk Nederlandstalig
-          aanspreekpunt. Geen anonieme helpdesk, maar een rustig
-          gesprek waarin jouw situatie centraal staat.
+          Kleine verschillen in taal, verwachtingen en communicatiestijl
+          kunnen een grote invloed hebben op de ervaring van Nederlandse
+          en Vlaamse gasten. Dutch Guest Care bekijkt uw gastcommunicatie
+          vanuit hun perspectief en vertaalt dat naar praktische verbeteringen
+          die u meteen kunt gebruiken.
         </p>
       </div>
 
     </div>
   </section>
 
-
-  <section class="soft">
+  <section id="diensten" class="soft">
     <div class="container">
 
       <div class="section-title">
-        <h2>Waarmee kunnen we helpen?</h2>
-        <p>
-          Praktische ondersteuning en begeleiding afgestemd op jouw situatie.
-        </p>
+        <h2>Waarmee helpen we hospitalitybedrijven?</h2>
       </div>
 
       <div class="cards">
 
         <div class="card">
-          <div class="card-number">01</div>
-          <h3>Praktische vragen</h3>
+          <h3>Gastcommunicatie</h3>
           <p>
-            Hulp bij het begrijpen van lokale procedures,
-            mogelijkheden en praktische situaties in Griekenland.
+            We verbeteren welkomstberichten, pre-arrival communicatie,
+            check-in informatie, praktische instructies en opvolgberichten.
           </p>
         </div>
 
         <div class="card">
-          <div class="card-number">02</div>
-          <h3>Wonen & verblijven</h3>
+          <h3>Website & boekingspagina's</h3>
           <p>
-            Persoonlijke ondersteuning bij vragen die ontstaan
-            wanneer je langere tijd in Griekenland woont of verblijft.
+            We bekijken of informatie voor Nederlandse en Vlaamse gasten
+            duidelijk, overtuigend en professioneel overkomt.
           </p>
         </div>
 
         <div class="card">
-          <div class="card-number">03</div>
-          <h3>Lokale wegwijs</h3>
+          <h3>Reviews & moeilijke situaties</h3>
           <p>
-            Samen bekijken we waar je terechtkunt en welke
-            praktische vervolgstappen voor jouw situatie zinvol zijn.
+            Praktische ondersteuning bij reviewreacties, klachten,
+            misverstanden en gevoelige klantsituaties.
           </p>
         </div>
 
       </div>
+
     </div>
   </section>
 
+  <section id="pakketten">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Pakketten & prijzen</h2>
+        <p>
+          Transparante eenmalige pakketten en doorlopende ondersteuning.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <div class="price-card">
+
+          <h3>Quick Dutch Guest Check</h3>
+
+          <div class="price">
+            €79 <small>eenmalig</small>
+          </div>
+
+          <p>
+            Een gerichte controle voor één accommodatie of boekingspagina.
+          </p>
+
+          <ul>
+            <li>Eén website- of boekingspagina</li>
+            <li>Maximaal vijf bestaande gastberichten</li>
+            <li>Vijf concrete verbeterpunten</li>
+            <li>Eén verbeterd welkomstbericht</li>
+            <li>Bespreking van 20 minuten</li>
+          </ul>
+
+          <a class="button" href="#contact">
+            Vraag dit pakket aan
+          </a>
+
+        </div>
+
+        <div class="price-card featured">
+
+          <div class="badge">Meest gekozen</div>
+
+          <h3>Dutch Guest Upgrade</h3>
+
+          <div class="price">
+            €199 <small>eenmalig</small>
+          </div>
+
+          <div class="intro-price">
+            Introductie: €99 voor de eerste vijf klanten
+          </div>
+
+          <ul>
+            <li>Kennismaking van 30 minuten</li>
+            <li>Controle van maximaal vijf pagina's</li>
+            <li>Tien gebruiksklare gastberichten</li>
+            <li>Tien concrete verbeterpunten</li>
+            <li>Nabespreking van 45 minuten</li>
+            <li>Eén correctieronde</li>
+          </ul>
+
+          <a class="button" href="#contact">
+            Plan een kennismaking
+          </a>
+
+        </div>
+
+        <div class="price-card">
+
+          <h3>Complete Dutch Guest Experience</h3>
+
+          <div class="price">
+            €349 <small>eenmalig</small>
+          </div>
+
+          <p>
+            Uitgebreide begeleiding voor één bedrijf met maximaal drie accommodaties.
+          </p>
+
+          <ul>
+            <li>Controle van maximaal tien pagina's</li>
+            <li>Vijftien gebruiksklare gastberichten</li>
+            <li>Vijf moeilijke klantsituaties</li>
+            <li>FAQ- en beoordelingsadvies</li>
+            <li>Twee gesprekken</li>
+            <li>Twee correctierondes</li>
+          </ul>
+
+          <a class="button" href="#contact">
+            Vraag dit pakket aan
+          </a>
+
+        </div>
+
+        <div class="price-card">
+
+          <h3>Monthly Dutch Guest Support</h3>
+
+          <div class="price">
+            €149 <small>per maand</small>
+          </div>
+
+          <p>
+            Doorlopende ondersteuning met een minimale looptijd van drie maanden.
+          </p>
+
+          <ul>
+            <li>Vijf nieuwe of aangepaste berichten</li>
+            <li>Tien antwoorden op beoordelingen</li>
+            <li>Maandelijks gesprek van 30 minuten</li>
+            <li>Controle van één nieuwe pagina</li>
+            <li>Reactie binnen twee werkdagen</li>
+          </ul>
+
+          <a class="button" href="#contact">
+            Bespreek maandelijkse support
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="soft">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Extra diensten</h2>
+        <p>
+          Gerichte hulp wanneer u iets extra nodig heeft.
+        </p>
+      </div>
+
+      <div class="extras">
+
+        <div class="extra-row">
+          <strong>Vijf extra gastberichten</strong>
+          <span>€49</span>
+        </div>
+
+        <div class="extra-row">
+          <strong>Tien antwoorden op beoordelingen</strong>
+          <span>€59</span>
+        </div>
+
+        <div class="extra-row">
+          <strong>Extra pagina controleren</strong>
+          <span>€39</span>
+        </div>
+
+        <div class="extra-row">
+          <strong>Adviesgesprek van 60 minuten</strong>
+          <span>€59</span>
+        </div>
+
+        <div class="extra-row">
+          <strong>Spoedlevering binnen 48 uur</strong>
+          <span>€50 toeslag</span>
+        </div>
+
+        <div class="extra-row">
+          <strong>Seizoensupdate bestaande teksten</strong>
+          <span>€79</span>
+        </div>
+
+        <div class="note">
+          Extra diensten zijn beschikbaar bij een bestaand pakket
+          of voor bestaande klanten. Spoedlevering is afhankelijk
+          van beschikbaarheid.
+        </div>
+
+      </div>
+
+    </div>
+  </section>
 
   <section id="werkwijze">
     <div class="container">
 
       <div class="section-title">
-        <h2>Zo werkt het</h2>
+        <h2>Werkwijze</h2>
         <p>
-          Voorbereid het gesprek in, zodat we jouw tijd zo goed mogelijk benutten.
+          Gericht voorbereid, praktisch uitgevoerd.
         </p>
       </div>
 
       <div class="steps">
 
         <div class="step">
-          <div class="step-circle">1</div>
+          <div class="step-number">1</div>
           <div>
-            <h3>Plan je gesprek</h3>
+            <h3>Kies uw pakket</h3>
             <p>
-              Kies een geschikt moment voor je persoonlijke online consultatie.
+              Kies de ondersteuning die het best past bij uw accommodatie
+              of hospitalitybedrijf.
             </p>
           </div>
         </div>
 
         <div class="step">
-          <div class="step-circle">2</div>
+          <div class="step-number">2</div>
           <div>
-            <h3>Geef vooraf je gesprekspunten door</h3>
+            <h3>Geef vooraf uw aandachtspunten door</h3>
             <p>
-              Bij het plannen kun je aangeven welke onderwerpen
-              of vragen je tijdens het gesprek wilt bespreken.
-              Zo kunnen we ons goed voorbereiden.
+              U stuurt vooraf de relevante pagina's, bestaande berichten,
+              vragen of situaties door zodat de bespreking efficiënt
+              kan worden voorbereid.
             </p>
           </div>
         </div>
 
         <div class="step">
-          <div class="step-circle">3</div>
+          <div class="step-number">3</div>
           <div>
-            <h3>Persoonlijke consultatie</h3>
+            <h3>Analyse en concrete verbeteringen</h3>
             <p>
-              Tijdens het gesprek nemen we jouw vragen rustig
-              en gestructureerd door en bekijken we samen
-              mogelijke vervolgstappen.
+              Uw communicatie wordt bekeken vanuit het perspectief
+              van Nederlandse en Vlaamse gasten.
+            </p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">4</div>
+          <div>
+            <h3>Persoonlijke bespreking</h3>
+            <p>
+              Tijdens de afgesproken online bespreking nemen we
+              bevindingen, teksten en concrete vervolgstappen samen door.
+            </p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">5</div>
+          <div>
+            <h3>Direct bruikbaar resultaat</h3>
+            <p>
+              U ontvangt praktische teksten en verbeteringen die u
+              direct kunt toepassen in uw dagelijkse gastcommunicatie.
             </p>
           </div>
         </div>
 
       </div>
 
+      <div class="note">
+        <strong>Nog één aanvullende vraag?</strong><br>
+        Na het vastleggen van de gesprekspunten kunt u maximaal
+        één extra vraag of aandachtspunt toevoegen tot uiterlijk
+        6 uur vóór de afspraak.
+      </div>
+
     </div>
   </section>
 
-
-  <section id="gesprek" class="soft">
+  <section class="soft">
     <div class="container">
 
       <div class="section-title">
-        <h2>Goed voorbereid op je gesprek</h2>
-        <p>
-          Jouw tijd is waardevol. Daarom werken we met vooraf
-          doorgegeven gesprekspunten.
-        </p>
+        <h2>Voor wie is Dutch Guest Care?</h2>
       </div>
 
-      <div class="intro">
-        <p>
-          Bij het maken van je afspraak geef je aan welke onderwerpen
-          je wilt bespreken. Hierdoor kunnen we de consultatie
-          gericht voorbereiden en tijdens het gesprek meteen
-          tot de kern komen.
-        </p>
-      </div>
+      <div class="cards">
 
-      <div class="important">
-        <strong>Nog iets vergeten?</strong><br>
-        Geen probleem. Je kunt maximaal één aanvullende vraag
-        of één extra gesprekspunt doorgeven tot uiterlijk
-        6 uur vóór de geplande afspraak.
+        <div class="card">
+          <h3>Hotels</h3>
+          <p>
+            Voor hotels die hun Nederlandstalige gastcommunicatie
+            professioneler en klantgerichter willen maken.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>B&B's & vakantieverhuur</h3>
+          <p>
+            Voor kleinere accommodaties die persoonlijke service
+            willen combineren met duidelijke communicatie.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Property managers</h3>
+          <p>
+            Voor beheerders van meerdere accommodaties die een
+            consistente professionele gastbeleving willen bieden.
+          </p>
+        </div>
+
       </div>
 
     </div>
   </section>
-
 
   <section id="contact" class="cta">
 
     <div class="container">
 
-      <h2>Een vraag over Griekenland?</h2>
+      <h2>Klaar om uw Nederlandstalige gastbeleving te verbeteren?</h2>
 
       <p>
-        Bespreek jouw situatie in het Nederlands en krijg
-        persoonlijke, praktische ondersteuning.
+        Bespreek uw situatie en ontdek welk pakket het beste past
+        bij uw accommodatie of hospitalitybedrijf.
       </p>
 
-      <a class="button" href="#contact">
-        Afspraak aanvragen
+      <a class="button" href="mailto:info@dutchguestcare.gr">
+        Neem contact op
       </a>
 
     </div>
@@ -507,11 +786,18 @@
 
 </main>
 
-
 <footer>
+
   <p>
     <strong>Dutch Guest Care</strong><br>
-    Nederlandstalige persoonlijke ondersteuning in Griekenland
+    Hospitality consultancy voor Nederlandse en Vlaamse gasten in Griekenland
+  </p>
+
+  <br>
+
+  <p>
+    Dutch Guest Care biedt praktische consultancy en communicatiesupport.
+    Geen juridisch, fiscaal of boekhoudkundig advies.
   </p>
 
   <br>
@@ -519,6 +805,7 @@
   <p>
     © 2026 Dutch Guest Care. Alle rechten voorbehouden.
   </p>
+
 </footer>
 
 </body>
